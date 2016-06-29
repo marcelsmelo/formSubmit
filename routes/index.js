@@ -7,7 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-  res.render('post', {dataPost: req.body});
+  console.log('BODY', req.body);
+  res.render('formPost', {dataPost: req.body});
 });
 
 module.exports = router;
