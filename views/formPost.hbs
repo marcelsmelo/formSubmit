@@ -1,2 +1,5 @@
 <h1>Form Submit</h1>
-teste - {{dataForm.nome}}<br />
+
+{{#each dataForm}}
+  {{@key}}: {{this}}
+{{/each}}
