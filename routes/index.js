@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
+  let params = {};
+  req.body.each((index, value)=>{
+    console.log(index, value);
+  });
   res.render('formPost', {dataForm: req.body});
 });
 
